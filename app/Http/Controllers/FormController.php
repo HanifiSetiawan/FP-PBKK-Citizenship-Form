@@ -17,9 +17,15 @@ class FormController extends Controller
 {
     $validator = Validator::make($request->all(), [
         'name' => 'required|string|max:255',
-        'email' => 'required|email',
+        'id' => 'required|numeric',
+        'phonenumber' => 'string|max:20',
         'address' => 'required|string|max:255',
-        'score' => 'required|numeric|between:2.50,99.99',
+        'age' => 'required|integer',
+        'religion' => 'required|string|max:255',
+        'gender' => 'required|string|in:Male,Female',
+        'job' => 'required|string|max:255',
+        'marialstatus' => 'required|string|max:255',
+        'citizenship' => 'required|string|max:255',
         'picture' => 'required|image|max:2048', // 2 MB in kilobytes
     ]);
 
@@ -31,9 +37,16 @@ class FormController extends Controller
     // Make sure you are storing the data in an array and passing it to the view.
     $data = [
         'name' => $request->input('name'),
-        'email' => $request->input('email'),
+        'id' => $request->input('id'),
+        'phonenumber' => $request->input('phonenumber'),
         'address' => $request->input('address'),
-        'score' => $request->input('score'),
+        'age' => $request->input('age'),
+        'religion' => $request->input('religion'),
+        'gender' => $request->input('gender'),
+        'job' => $request->input('job'),
+        'marialstatus' => $request->input('marialstatus'),
+        'citizenship' => $request->input('citizenship'),
+
         'picture_path' => 'path_to_uploaded_picture.jpg', // Replace with the actual path
     ];
 
@@ -49,5 +62,3 @@ class FormController extends Controller
 }
 
 }
-
-
