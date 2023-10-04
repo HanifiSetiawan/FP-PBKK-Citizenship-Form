@@ -5,7 +5,9 @@
 | Name                        | NRP        |
 |-----------------------------|------------|
 |Hanifi Abrar Setiawan        | 5025211066 |
-|I Putu Arya Prawira          | 5025211 |
+|I Putu Arya Prawira          | 5025211    |
+
+## Screenshots
 
   
 
