@@ -25,7 +25,7 @@
                         </div>
                         @endif
 
-                        <form method="POST" action="/submit" enctype="multipart/form-data">
+                        <form method="POST" action="/success" enctype="multipart/form-data">
                             @csrf
 
                             <div class="mb-3">
@@ -38,10 +38,10 @@
                             </div>
 
                             <div class="mb-3">
-                                <label for="id" class="form-label">ID</label>
+                                <label for="nik" class="form-label">ID</label>
                                 <div class="row g-3">
                                     <div class="col-md">
-                                        <input type="text" class="form-control" name="id" id="id" placeholder="Please input your specific ID" value="{{ old('ID') }}" required>
+                                        <input type="text" class="form-control" name="nik" id="nik" placeholder="Please input your specific nik" value="{{ old('nik') }}" required>
                                     </div>
                                 </div>
                             </div>

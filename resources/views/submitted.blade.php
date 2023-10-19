@@ -136,8 +136,8 @@
                     </div>
 
                     <!-- Display the uploaded image if it's stored -->
-                    @if (isset($data['picture_path']))
-                        <img src="{{ asset($data['picture_path']) }}" alt="Uploaded Picture">
+                    @if (isset($data['picture']))
+                        <img src="{{ asset($data['picture']) }}" alt="Uploaded Picture">
                     @endif
 
                     <br><br>
