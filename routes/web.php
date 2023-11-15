@@ -12,7 +12,9 @@ Route::get('/', function () {
 Route::get('/form', [FormController::class, 'showForm'])->name('Form');
 Route::post('/success', [FormController::class, 'submitForm']);
 
-Route::get('/Data', [DataController::class, 'index'])->name('Data');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/Data', [DataController::class, 'index'])->name('Data');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
