@@ -3,6 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .table-wrap {
+            word-wrap: break-word;
+        }
+
+        .foto {
+            width: 100px;
+            height: auto;
+        }
+    </style>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -20,7 +30,7 @@
     <div id="app">
         <nav class="navbar text-light navbar-expand-md navbar-dark bg-dark shadow-sm border-bottom border-body" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" href="{{ url('/home') }}">
                     Citizenship
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -30,7 +40,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-itme">
+                            <a class="nav-link" href="{{ route('Form') }}">Form</a>
+                        </li>
+                        <li class="nav-itme">
+                            <a class="nav-link" href="{{ route('Data') }}">Database</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
