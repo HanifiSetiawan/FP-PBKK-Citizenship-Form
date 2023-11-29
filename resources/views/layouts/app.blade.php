@@ -12,6 +12,28 @@
             width: 100px;
             height: auto;
         }
+        
+        .gradient-overlay {
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .gradient-overlay img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gradient-overlay::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.7)); /* Adjust the gradient colors and opacity as needed */
+        }
     </style>
 
     <!-- CSRF Token -->
@@ -28,10 +50,10 @@
 </head>
 <body class="bg-dark">
     <div id="app">
-        <nav class="navbar text-light navbar-expand-md navbar-dark bg-dark shadow-sm border-bottom border-body" data-bs-theme="dark">
+        <nav class="navbar text-light navbar-expand-md navbar-dark bg-dark shadow-sm border-bottom border-body fixed-top" data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/home') }}">
-                    Citizenship
+                    KTP's
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>

@@ -9,11 +9,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/form', [FormController::class, 'showForm'])->name('Form');
-Route::post('/success', [FormController::class, 'submitForm']);
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/Data', [DataController::class, 'index'])->name('Data');
+
+    Route::get('/form', [FormController::class, 'showForm'])->name('Form');
+    Route::post('/success', [FormController::class, 'submitForm']);
 });
 Auth::routes();
 
