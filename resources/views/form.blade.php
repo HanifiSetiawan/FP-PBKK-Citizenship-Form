@@ -69,20 +69,24 @@
 
                             <div class="mb-3">
                                 <label for="religion" class="form-label">Religion</label>
-                                <div class="row g-3">
-                                    <div class="col-md">
-                                        <input type="text" class="form-control" name="religion" id="religion" placeholder="Please input your Religion" value="{{ old('religion') }}">
-                                    </div>
-                                </div>
+                                <select class="form-select" name="religion" id="religion">
+                                    <option value="" {{ old('religion') == '' ? 'selected' : '' }}>-- Option --</option>
+                                    <option value="Islam" {{ old('religion') == 'Islam' ? 'selected' : '' }}>Islam</option>
+                                    <option value="Christian" {{ old('religion') == 'Christian' ? 'selected' : '' }}>Christian</option>
+                                    <option value="Protestan" {{ old('religion') == 'Protestan' ? 'selected' : '' }}>Protestan</option>
+                                    <option value="Hindi" {{ old('religion') == 'Hindi' ? 'selected' : '' }}>Hindi</option>
+                                    <option value="Budha" {{ old('religion') == 'Budha' ? 'selected' : '' }}>Budha</option>
+                                    <option value="Other" {{ old('religion') == 'Other' ? 'selected' : '' }}>Other</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
                                 <label for="gender" class="form-label">Gender</label>
-                                <div class="row g-3">
-                                    <div class="col-md">
-                                        <input type="text" class="form-control" name="gender" id="gender" placeholder="Please input your Gender" value="{{ old('gender') }}">
-                                    </div>
-                                </div>
+                                <select class="form-select" name="gender" id="gender">
+                                    <option value="" {{ old('gender') == '' ? 'selected' : '' }}>-- Option --</option>
+                                    <option value="Male" {{ old('gender') == 'Male' ? 'selected' : '' }}>Male</option>
+                                    <option value="Female" {{ old('gender') == 'Female' ? 'selected' : '' }}>Female</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
@@ -96,15 +100,15 @@
 
                             <div class="mb-3">
                                 <label for="marialstatus" class="form-label">Marial status</label>
-                                <div class="row g-3">
-                                    <div class="col-md">
-                                        <input type="text" class="form-control" name="marialstatus" id="marialstatus" placeholder="Please input your Marial status" value="{{ old('marialstatus') }}">
-                                    </div>
-                                </div>
+                                <select class="form-select" name="marialstatus" id="marialstatus">
+                                    <option value="" {{ old('marialstatus') == '' ? 'selected' : '' }}>-- Option --</option>
+                                    <option value="Unmarried" {{ old('marialstatus') == 'Unmarried' ? 'selected' : '' }}>Unmarried</option>
+                                    <option value="Married" {{ old('marialstatus') == 'Married' ? 'selected' : '' }}>Married</option>
+                                </select>
                             </div>
 
                             <div class="mb-3">
-                                <label for="citizenship" class="form-label">Citizenship</label>
+                                <label for="citizenship" class="form-label">City Origin</label>
                                 <div class="row g-3">
                                     <div class="col-md">
                                         <input type="text" class="form-control" name="citizenship" id="citizenship" placeholder="Please input your Citizenship" value="{{ old('citizenship') }}">
@@ -114,7 +118,7 @@
 
                             <div class="mb-3">
                                 <label for="picture" class="form-label">Picture (Max 2MB):</label>
-                                <input type="file" name="picture" id="picture" required>
+                                <input class="form-control" type="file" name="picture" id="picture" required>
                             </div>
 
                             <div class="card-footer text-body-secondary justify-content-center align-items-center">

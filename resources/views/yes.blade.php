@@ -11,13 +11,13 @@
                         <th>NIK</th>
                         <th>Phone number</th>
                         <th>Address</th>
-                        <th>age</th>
-                        <th>religion</th>
-                        <th>gender</th>
-                        <th>job</th>
-                        <th>marialstatus</th>
-                        <th>citizenship</th>
-                        <th>picture</th>
+                        <th>Age</th>
+                        <th>Religion</th>
+                        <th>Gender</th>
+                        <th>Job</th>
+                        <th>Marialstatus</th>
+                        <th>City Origin</th>
+                        <th>Picture</th>
                     </tr>
                 </thead>
                 <tbody class="table-group-divider">

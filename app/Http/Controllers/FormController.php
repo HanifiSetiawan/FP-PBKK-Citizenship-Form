@@ -23,10 +23,10 @@ class FormController extends Controller
         'phonenumber' => 'string|max:20',
         'address' => 'required|string|max:255',
         'age' => 'required|integer',
-        'religion' => 'required|string|max:255',
+        'religion' => 'required|string|in:Islam,Christian,Protestan,Hindi,Budha,Other',
         'gender' => 'required|string|in:Male,Female',
         'job' => 'required|string|max:255',
-        'marialstatus' => 'required|string|max:255',
+        'marialstatus' => 'required|string|in:Unmarried,Married',
         'citizenship' => 'required|string|max:255',
         'picture' => 'required|image|max:2048', // 2 MB in kilobytes
     ]);
