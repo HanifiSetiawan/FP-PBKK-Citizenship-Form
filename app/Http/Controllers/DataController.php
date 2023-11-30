@@ -9,7 +9,7 @@ class DataController extends Controller
     public function index(){
         /*$citizenships = citizenship::take(5)->get(); 
         return view('yes', ['citizenships' => $citizenships]);*/
-        $citizenships = citizenship::orderBy('created_at', 'desc')->take(5)->get();
+        $citizenships = citizenship::orderBy('created_at', 'desc')->take(6)->get();
         return view('yes', ['citizenships' => $citizenships]);
     }
 }

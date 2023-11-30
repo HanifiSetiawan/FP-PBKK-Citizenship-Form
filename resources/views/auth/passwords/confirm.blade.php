@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bg-dark border-light">
+            <div class="card bg-dark border-light" style="top: 50%;">
                 <div class="card-header text-light border-bottom">{{ __('Confirm Password') }}</div>
 
                 <div class="card-body text-light">
