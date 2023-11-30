@@ -4,8 +4,8 @@
 @section('content')
         <div class="container mt-5 h-100">
             <div class="row h-100 justify-content-center align-items-center">
-                <div class= "card border-dark mb-3" style="width: 50rem;">
-                    <div class="card-header text-center">
+                <div class= "card border-light mb-3 bg-dark text-light" style="width: 50rem;">
+                    <div class="card-header text-center border-light">
                         <h1 class="card-title">Citizenship Form</h1>
                     </div>
                     <div class="card-body">
@@ -121,8 +121,8 @@
                                 <input class="form-control" type="file" name="picture" id="picture" required>
                             </div>
 
-                            <div class="card-footer text-body-secondary justify-content-center align-items-center">
-                                <button type="submit" class="btn btn-outline-primary btn-lg">Submit</button>
+                            <div class="card-footer text-body-secondary d-flex flex-column align-items-end justify-content-end text-light">
+                                <button type="submit" class="btn btn-outline-success btn-lg">Submit</button>
                             </div>
                         </form>
                     </div>

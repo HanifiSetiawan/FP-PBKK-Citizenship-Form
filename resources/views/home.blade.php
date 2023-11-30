@@ -47,7 +47,24 @@
                     </div>
                     
                     <div class="mt-3">
-                        <h4> Data Example </h4>
+                        <div class="container mt-5">
+                            <h4 > Data Example </h4>
+                            <div class="row">
+                                @foreach($examples as $example)
+                                    <div class="col-md-6">
+                                        <div class="card mb-3 bg-dark border-light text-light" style="height: 15rem;">
+                                            <div class="card-body">
+                                                <h5 class="card-text">Name: {{ $example->name }}</h5>
+                                                <p class="card-text">Nik: {{ $example->nik }}</p>
+                                                <p class="card-text">Phone Number: {{ $example->phonenumber }}</p>
+                                                <p class="card-text">Address: {{ $example->address }}</p>
+                                                <p class="card-text">Age: {{ $example->age }}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

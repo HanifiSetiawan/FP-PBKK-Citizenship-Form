@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Example;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $Examples = Example::take(5)->get(); 
+        return view('home', ['examples' => $Examples]);
+        //return view('home');
     }
 }
