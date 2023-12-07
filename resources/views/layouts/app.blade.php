@@ -68,6 +68,9 @@
                         <li class="nav-itme">
                             <a class="nav-link" href="{{ route('Data') }}">Database</a>
                         </li>
+                        <li class="nav-itme">
+                            <a class="nav-link" href="{{ route('CS') }}">Customer Service</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
