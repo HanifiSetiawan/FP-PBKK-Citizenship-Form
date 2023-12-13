@@ -43,6 +43,14 @@
                         <td>
                             <img class="foto" src="{{ asset('storage/' . str_replace ('public/', '', $citizenship->picture)) }}" alt="picture">
                         </td>
+                        <td>
+                            <a href="{{ route('Datas.edit', $citizenship->id) }}" class="btn btn-warning mb-3">Edit</a>
+                            <form action="{{ route('Datas.destroy', $citizenship->id) }}" method="POST" class="d-inline">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
+                            </form>
+                        </td>
                     </tr>
                 @endforeach
             </tbody>

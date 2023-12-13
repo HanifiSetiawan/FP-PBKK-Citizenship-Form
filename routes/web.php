@@ -15,6 +15,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function () {
     Route::get('/Data', [DataController::class, 'index'])->name('Data');
     Route::get('/Data/all', [DataController::class, 'showAll'])->name('data.showAll');
+    Route::resource('Datas', DataController::class)->only(['index', 'edit', 'update', 'destroy']);
 
     Route::get('/form', [FormController::class, 'showForm'])->name('Form');
     Route::post('/success', [FormController::class, 'submitForm']);
