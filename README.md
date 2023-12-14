@@ -8,19 +8,19 @@
 |I Putu Arya Prawira          | 5025211065 |
 
 ## Requirements
-(5%) Laravel route
-(10%) Laravel controller
-(10%) View - Request Validation Response
-(10%) Database (DBMS)
-(10%) Model
-(5%) Eloquent/Query Builder
-(5%) DB Relationship
-(5%) Seeder
-(5%) Factory
-(5%) Laravel auth
-(+5%) Onion arch
-(10%) Jobs / Scheduling /Queue /broadcasting
-(20%) 1 feature per member, CRUD is excluded
+(5%) Laravel route <br>
+(10%) Laravel controller <br>
+(10%) View - Request Validation Response <br>
+(10%) Database (DBMS) <br>
+(10%) Model <br>
+(5%) Eloquent/Query Builder <br>
+(5%) DB Relationship <br>
+(5%) Seeder <br>
+(5%) Factory <br>
+(5%) Laravel auth <br>
+(+5%) Onion arch <br>
+(10%) Jobs / Scheduling /Queue /broadcasting <br>
+(20%) 1 feature per member, CRUD is excluded <br>
 
 ### Youtube Link
 https://youtu.be/1OzNKdITYUE?si=HqP0rP5gZA5Ri8Pw
