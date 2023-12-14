@@ -7,7 +7,25 @@
 |Hanifi Abrar Setiawan        | 5025211066 |
 |I Putu Arya Prawira          | 5025211065 |
 
-## Page
+## Requirements
+(5%) Laravel route
+(10%) Laravel controller
+(10%) View - Request Validation Response
+(10%) Database (DBMS)
+(10%) Model
+(5%) Eloquent/Query Builder
+(5%) DB Relationship
+(5%) Seeder
+(5%) Factory
+(5%) Laravel auth
+(+5%) Onion arch
+(10%) Jobs / Scheduling /Queue /broadcasting
+(20%) 1 feature per member, CRUD is excluded
+
+### Youtube Link
+https://youtu.be/1OzNKdITYUE?si=HqP0rP5gZA5Ri8Pw
+
+## Page Screen
 
 ### First Screen
 <img src="https://cdn.discordapp.com/attachments/827014097219878982/1184693030096212048/image.png?ex=658ce65c&is=657a715c&hm=49955e2f6db8c38d93f4c311a7bc26e4c58b893b553d360db4aadb0097a9683b&">
